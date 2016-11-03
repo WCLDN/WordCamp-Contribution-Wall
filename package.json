@@ -15,6 +15,7 @@
   "homepage": "https://github.com/WCLDN/WordCamp-Contribution-Wall",
   "scripts": {
     "test": "",
+    "start": "NODE_ENV=production node ./server.js",
     "dev": "node ./server.js",
     "build": "rimraf public && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint ."
