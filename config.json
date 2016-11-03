@@ -1,0 +1,26 @@
+{
+  "site_title": "WordCamp Contribution Wall",
+  "logo_uri": "https://s.w.org/about/images/logos/wordpress-logo-simplified-rgb.png",
+  "teams": {
+    "core": {
+      "name": "Core",
+      "icon": "dashicons-editor-code",
+      "icon_color": "#cd0000",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "meta": {
+      "name": "Meta",
+      "icon": "dashicons-networking",
+      "icon_color": "#aeadad",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    }
+  }
+}
