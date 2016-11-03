@@ -1,4 +1,4 @@
-dist
+public
 node_modules
 coverage
 webpack.*.js
