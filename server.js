@@ -2,6 +2,7 @@
 
 const path = require('path');
 const express = require('express');
+const api = require('./api');
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = (process.env.PORT || 3000);
@@ -29,12 +30,14 @@ if (isDeveloping) {
 
 	app.use(middleware);
 	app.use(webpackHotMiddleware(compiler));
+	app.use('/api', api);
 	app.get('*', function response(req, res) {
 		res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'public/index.html')));
 		res.end();
 	});
 } else {
 	app.use(express.static(__dirname + '/public'));
+	app.use('/api', api);
 	app.get('*', function response(req, res) {
 		res.sendFile(path.join(__dirname, 'public/index.html'));
 	});
