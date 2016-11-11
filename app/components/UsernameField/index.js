@@ -48,8 +48,6 @@ export default class UsernameField extends React.Component {
 				this.setState(newState);
 			}
 		});
-
-
 	};
 
 	className() {
@@ -67,8 +65,8 @@ export default class UsernameField extends React.Component {
 	render() {
 		return (
 			<div className='form-group has-feedback'>
-				<label htmlFor={this.name}>WordPress.org Username</label>
-				<input type='text' className='form-control' placeholder={this.props.placeholder} name={this.name}
+				<label htmlFor={this.props.name}>WordPress.org Username</label>
+				<input type='text' className='form-control' placeholder={this.props.placeholder} name={this.props.name}
 					   onChange={this.handleChange}/>
 				<span className={this.className()}/>
 			</div>
@@ -77,7 +75,12 @@ export default class UsernameField extends React.Component {
 }
 
 UsernameField.propTypes = {
-	onChange: React.PropTypes.func,
+	onChange: React.PropTypes.func.isRequired,
 	placeholder: React.PropTypes.string,
 	name: React.PropTypes.string
+};
+
+UsernameField.defaultProps = {
+	name: 'Username',
+	placeholder: 'Username',
 };
