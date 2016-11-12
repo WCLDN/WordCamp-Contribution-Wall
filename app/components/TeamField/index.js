@@ -26,9 +26,11 @@ export default class TeamField extends React.Component {
 		}
 		return (
 			<RadioGroup
+				Component='fieldset'
 				name={this.props.name}
 				selectedValue={this.props.value}
 				onChange={this.handleChange}>
+				<legend>{this.props.label}</legend>
 				{teams}
 			</RadioGroup>
 		);
