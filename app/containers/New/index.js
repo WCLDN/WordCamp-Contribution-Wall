@@ -1,14 +1,14 @@
 import React from 'react';
-// noinspection JSUnresolvedVariable
-import styles from './new.css';
 import UsernameField from '../../components/UsernameField';
+import TeamField from '../../components/TeamField';
 
 export default class New extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			'username': '',
-			'usernameValid': false
+			'usernameValid': false,
+			'team': ''
 		};
 	}
 
@@ -19,10 +19,17 @@ export default class New extends React.Component {
 		});
 	};
 
+	handleChangeTeam = (e) => {
+		this.setState({
+			'team': e
+		});
+	};
+
 	render() {
 		return (
-			<div className={styles.new}>
+			<div>
 				<UsernameField onChange={this.handleChangeUsername}/>
+				<TeamField value={this.state.team} onChange={this.handleChangeTeam}/>
 			</div>
 		);
 	}

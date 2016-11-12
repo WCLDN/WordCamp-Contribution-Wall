@@ -4,7 +4,7 @@
   "teams": {
     "core": {
       "name": "Core",
-      "icon": "dashicons-editor-code",
+      "icon": "EditorCode",
       "icon_color": "#cd0000",
       "contributions": [
         "First thing",
@@ -14,7 +14,7 @@
     },
     "meta": {
       "name": "Meta",
-      "icon": "dashicons-networking",
+      "icon": "Networking",
       "icon_color": "#aeadad",
       "contributions": [
         "First thing",
