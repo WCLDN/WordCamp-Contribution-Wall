@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './username.css';
 // noinspection JSUnresolvedVariable
+import styles from './username.css';
 
 export default class UsernameField extends React.Component {
 	constructor(props) {
@@ -56,8 +56,10 @@ export default class UsernameField extends React.Component {
 		if (this.state.showValidation === false) {
 			return className;
 		} else if (!this.state.valid) {
+			// noinspection JSUnresolvedVariable
 			return className + ' glyphicon-remove ' + styles.iconRed;
 		} else if (this.state.valid) {
+			// noinspection JSUnresolvedVariable
 			return className + ' glyphicon-ok ' + styles.iconGreen;
 		}
 	}
@@ -65,7 +67,7 @@ export default class UsernameField extends React.Component {
 	render() {
 		return (
 			<div className='form-group has-feedback'>
-				<label htmlFor={this.props.name}>WordPress.org Username</label>
+				{ this.props.label ? <label htmlFor={this.props.name}>{this.props.label}</label> : null }
 				<input type='text' className='form-control' placeholder={this.props.placeholder} name={this.props.name}
 					   onChange={this.handleChange}/>
 				<span className={this.className()}/>
@@ -77,10 +79,12 @@ export default class UsernameField extends React.Component {
 UsernameField.propTypes = {
 	onChange: React.PropTypes.func.isRequired,
 	placeholder: React.PropTypes.string,
-	name: React.PropTypes.string
+	name: React.PropTypes.string,
+	label: React.PropTypes.string
 };
 
 UsernameField.defaultProps = {
 	name: 'Username',
 	placeholder: 'Username',
+	label: 'WordPress.org Username'
 };
