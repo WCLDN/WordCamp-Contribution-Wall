@@ -1,5 +1,8 @@
 import React from 'react';
+// noinspection JSUnresolvedVariable
 import {Radio} from 'react-radio-group';
+// noinspection JSUnresolvedVariable
+import styles from './team.css';
 const Dashicons = require('../Dashicons');
 
 export default class Team extends React.Component {
@@ -9,16 +12,16 @@ export default class Team extends React.Component {
 
 	render() {
 		const Icon = Dashicons[this.props.args.icon];
-		let iconColor = '#000';
+		let iconColor = '#888';
 		if (this.props.colorIcon) {
 			iconColor = this.props.args.icon_color;
 		}
 		return (
-			<div>
-				<Radio id={this.props.slug} value={this.props.slug}/>
-				<label value={this.props.slug} htmlFor={this.props.slug}>
+			<div className={styles.option}>
+				<label value={this.props.slug}>
 					<Icon fill={iconColor}/>
 					{this.props.args.name}
+					<Radio value={this.props.slug}/>
 				</label>
 			</div>
 		);

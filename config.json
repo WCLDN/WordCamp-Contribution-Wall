@@ -2,6 +2,26 @@
   "site_title": "WordCamp Contribution Wall",
   "logo_uri": "https://s.w.org/about/images/logos/wordpress-logo-simplified-rgb.png",
   "teams": {
+    "accessibility": {
+      "name": "Accessibility",
+      "icon": "UniversalAccess",
+      "icon_color": "#11799D",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "community": {
+      "name": "Community",
+      "icon": "Groups",
+      "icon_color": "#11799d",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
     "core": {
       "name": "Core",
       "icon": "EditorCode",
@@ -12,10 +32,110 @@
         "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
       ]
     },
+    "design": {
+      "name": "Design",
+      "icon": "Art",
+      "icon_color": "#000",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "documentation": {
+      "name": "Documentation",
+      "icon": "AdminPage",
+      "icon_color": "#000",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "flow": {
+      "name": "Flow",
+      "icon": "WelcomeViewSite",
+      "icon_color": "#000",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
     "meta": {
       "name": "Meta",
       "icon": "Networking",
       "icon_color": "#aeadad",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "mobile": {
+      "name": "Mobile",
+      "icon": "Smartphone",
+      "icon_color": "#000",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "plugins": {
+      "name": "Plugins",
+      "icon": "AdminPlugins",
+      "icon_color": "#F06723",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "polyglots": {
+      "name": "Translation",
+      "icon": "Translation",
+      "icon_color": "#C32283",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "support": {
+      "name": "Support",
+      "icon": "FormatChat",
+      "icon_color": "#33B4CE",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "themes": {
+      "name": "Themes",
+      "icon": "AdminAppearance",
+      "icon_color": "#4e3288",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "training": {
+      "name": "Training",
+      "icon": "WelcomeLearnMore",
+      "icon_color": "#000",
+      "contributions": [
+        "First thing",
+        "First another thing",
+        "First pointlessly long  thing, why is this so long? I dont know why but yeah its long anyway."
+      ]
+    },
+    "tv": {
+      "name": "TV",
+      "icon": "VideoAlt2",
+      "icon_color": "#73ad30",
       "contributions": [
         "First thing",
         "First another thing",

@@ -1,0 +1,33 @@
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.option {
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.option label {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9;
+    border: 1px #fff solid;
+}
+
+.option span {
+    width: 100%;
+    display: block;
+}
+
+.option svg {
+    height: 2em;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.option input {
+}

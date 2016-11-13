@@ -1,5 +1,8 @@
 import React from 'react';
+// noinspection JSUnresolvedVariable
 import {RadioGroup} from 'react-radio-group';
+// noinspection JSUnresolvedVariable
+import styles from './team.css';
 import Team from './Team';
 
 const config = require('../../../config.json');
@@ -30,6 +33,7 @@ export default class TeamField extends React.Component {
 
 			teams.push(<Team key={key} slug={slug} args={team} colorIcon={colorIcon}/>);
 		}
+		// noinspection JSUnresolvedVariable
 		return (
 			<RadioGroup
 				Component='fieldset'
@@ -37,7 +41,9 @@ export default class TeamField extends React.Component {
 				selectedValue={this.props.value}
 				onChange={this.handleChange}>
 				<legend>{this.props.label}</legend>
-				{teams}
+				<div className={styles.field}>
+					{teams}
+				</div>
 			</RadioGroup>
 		);
 	}
