@@ -19,10 +19,16 @@ export default class TeamField extends React.Component {
 			// skip loop if the property is from prototype
 			// noinspection JSUnresolvedFunction
 			if (!config.teams.hasOwnProperty(slug)) continue;
+
 			const team = config.teams[slug];
 			const key = this.props.name + '-' + slug;
+			let colorIcon = false;
 
-			teams.push(<Team key={key} slug={slug} args={team}/>);
+			if (this.props.value === slug)  {
+				colorIcon = true;
+			}
+
+			teams.push(<Team key={key} slug={slug} args={team} colorIcon={colorIcon}/>);
 		}
 		return (
 			<RadioGroup
