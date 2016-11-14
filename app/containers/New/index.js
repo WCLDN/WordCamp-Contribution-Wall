@@ -1,6 +1,7 @@
 import React from 'react';
 import UsernameField from '../../components/UsernameField';
 import TeamField from '../../components/TeamField';
+import ContributionField from '../../components/ContributionField';
 
 export default class New extends React.Component {
 	constructor(props) {
@@ -8,7 +9,8 @@ export default class New extends React.Component {
 		this.state = {
 			'username': '',
 			'usernameValid': false,
-			'team': ''
+			'team': '',
+			'contribution': ''
 		};
 	}
 
@@ -25,11 +27,18 @@ export default class New extends React.Component {
 		});
 	};
 
+	handleChangeContribution = (e) => {
+		this.setState({
+			'contribution': e
+		});
+	};
+
 	render() {
 		return (
 			<div>
 				<UsernameField onChange={this.handleChangeUsername}/>
 				<TeamField value={this.state.team} onChange={this.handleChangeTeam}/>
+				<ContributionField team={this.state.team} value={this.state.contribution} onChange={this.handleChangeContribution}/>
 			</div>
 		);
 	}
